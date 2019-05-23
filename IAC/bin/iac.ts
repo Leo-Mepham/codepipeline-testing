@@ -5,16 +5,14 @@ import { IacStack } from '../lib/iac-stack';
 
 /*
 
-    Stack name declared below, each environment is 
-    declared here
-
-    'cdk synth -c environment=staging'
+    Stack names are declared below, each environment is 
+    declared here, staging, production, etc
 
 */
 
 const app = new cdk.App();
 
-// cdk deploy Staging
+// cdk deploy staging
 new IacStack(app, 'staging', {
     env: {
         region: 'eu-west-2'
