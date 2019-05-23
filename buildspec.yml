@@ -9,6 +9,7 @@ phases:
         - echo Move to IAC folder
         - cd IAC
         - echo Install dependencies
+        - npm i
         - echo TypeScript build to JS
         - npm run-script build
         - echo CDK file creation
