@@ -4,6 +4,7 @@ phases:
     runtime-versions:
       nodejs: 8  
     commands:  
+      - cd IAC
       - npm install
   build:
     commands:
