@@ -26,8 +26,8 @@ export class s3Bucket extends cdk.Construct {
     makeBucketName(props: s3BucketProps) : string {
         // Bucket Name as it will be in AWS
         if (typeof props.bucketSuffix === 'string' && props.bucketSuffix.length)
-            return cdk.Aws.accountId + moment().format('YYYYMMMDDhhmmss') + props.bucketSuffix;
+            return cdk.Aws.accountId + moment().format('YYYYMMDDhhmmss') + props.bucketSuffix;
 
-        return cdk.Aws.accountId + 'nosuffix';
+        return cdk.Aws.accountId + moment().format('YYYYMMDDhhmmss') + 'nosuffix';
     }
 }
