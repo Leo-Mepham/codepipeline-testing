@@ -1,0 +1,15 @@
+phases:
+  install:
+    runtime-versions:
+      nodejs: 8
+  build:
+    commands:
+        - echo Build started on `date`
+        - echo Move to IAC folder
+        - cd IAC
+        - echo TypeScript Build
+        - npm run-script build
+        - echo CDK file creation
+        - cdk synth > cloudformation.yml
+        
+    
