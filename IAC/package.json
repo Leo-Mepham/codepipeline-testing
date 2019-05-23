@@ -1,0 +1,23 @@
+{
+  "name": "iac",
+  "version": "0.1.0",
+  "bin": {
+    "iac": "js/bin/iac.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/node": "8.10.45",
+    "typescript": "^3.3.3333",
+    "aws-cdk": "^0.31.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-s3": "*",
+    "@aws-cdk/cdk": "^0.31.0",
+    "moment": "^2.24.0",
+    "source-map-support": "^0.5.12"
+  }
+}
