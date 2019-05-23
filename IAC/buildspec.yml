@@ -11,6 +11,6 @@ phases:
       - npm run-script build
       - npm run cdk synth -- -o cf
 artifacts:
-  base-directory: cf
+  base-directory: IAC/cf
   files: '**/*'
     
