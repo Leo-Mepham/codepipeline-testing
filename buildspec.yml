@@ -7,7 +7,8 @@ phases:
         - echo Build started on `date`
         - echo Move to IAC folder
         - cd IAC
-        - echo TypeScript Build
+        - echo Install dependencies
+        - echo TypeScript build to JS
         - npm run-script build
         - echo CDK file creation
         - cdk synth > cloudformation.yml
