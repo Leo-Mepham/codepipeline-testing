@@ -8,6 +8,8 @@ import { IacStack } from '../lib/iac-stack';
     Stack names are declared below, each environment is 
     declared here, staging, production, etc
 
+    This may be superseded in the CodePipeline stack name step
+
 */
 
 const app = new cdk.App();
